@@ -1,0 +1,418 @@
+[
+    {
+        "title": "The Shawshank Redemption",
+        "genres": ["Drama", "Crime"],
+        "year": 1994,
+        "director": "Frank Darabont",
+        "actors": ["Tim Robbins", "Morgan Freeman", "Bob Gunton"],
+        "average_rating": 9.3
+    },
+    {
+        "title": "The Godfather",
+        "genres": ["Crime", "Drama"],
+        "year": 1972,
+        "director": "Francis Ford Coppola",
+        "actors": ["Marlon Brando", "Al Pacino", "James Caan"],
+        "average_rating": 9.2
+    },
+    {
+        "title": "The Godfather: Part II",
+        "genres": ["Crime", "Drama"],
+        "year": 1974,
+        "director": "Francis Ford Coppola",
+        "actors": ["Al Pacino", "Robert De Niro", "Robert Duvall"],
+        "average_rating": 9.0
+    },
+    {
+        "title": "The Dark Knight",
+        "genres": ["Action", "Crime", "Drama"],
+        "year": 2008,
+        "director": "Christopher Nolan",
+        "actors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
+        "average_rating": 9.0
+    },
+    {
+        "title": "12 Angry Men",
+        "genres": ["Drama"],
+        "year": 1957,
+        "director": "Sidney Lumet",
+        "actors": ["Henry Fonda", "Lee J. Cobb", "Martin Balsam"],
+        "average_rating": 9.0
+    },
+    {
+        "title": "Schindler's List",
+        "genres": ["Biography", "Drama", "History"],
+        "year": 1993,
+        "director": "Steven Spielberg",
+        "actors": ["Liam Neeson", "Ralph Fiennes", "Ben Kingsley"],
+        "average_rating": 8.9
+    },
+    {
+        "title": "The Lord of the Rings: The Return of the King",
+        "genres": ["Adventure", "Drama", "Fantasy"],
+        "year": 2003,
+        "director": "Peter Jackson",
+        "actors": ["Elijah Wood", "Viggo Mortensen", "Ian McKellen"],
+        "average_rating": 8.9
+    },
+    {
+        "title": "Pulp Fiction",
+        "genres": ["Crime", "Drama"],
+        "year": 1994,
+        "director": "Quentin Tarantino",
+        "actors": ["John Travolta", "Uma Thurman", "Samuel L. Jackson"],
+        "average_rating": 8.9
+    },
+    {
+        "title": "The Good, the Bad and the Ugly",
+        "genres": ["Western"],
+        "year": 1966,
+        "director": "Sergio Leone",
+        "actors": ["Clint Eastwood", "Eli Wallach", "Lee Van Cleef"],
+        "average_rating": 8.8
+    },
+    {
+        "title": "Fight Club",
+        "genres": ["Drama"],
+        "year": 1999,
+        "director": "David Fincher",
+        "actors": ["Brad Pitt", "Edward Norton", "Meat Loaf"],
+        "average_rating": 8.8
+    },
+    {
+        "title": "Forrest Gump",
+        "genres": ["Drama", "Romance"],
+        "year": 1994,
+        "director": "Robert Zemeckis",
+        "actors": ["Tom Hanks", "Robin Wright", "Gary Sinise"],
+        "average_rating": 8.8
+    },
+    {
+        "title": "Inception",
+        "genres": ["Action", "Adventure", "Sci-Fi"],
+        "year": 2010,
+        "director": "Christopher Nolan",
+        "actors": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page"],
+        "average_rating": 8.8
+    },
+    {
+        "title": "The Lord of the Rings: The Fellowship of the Ring",
+        "genres": ["Adventure", "Drama", "Fantasy"],
+        "year": 2001,
+        "director": "Peter Jackson",
+        "actors": ["Elijah Wood", "Ian McKellen", "Orlando Bloom"],
+        "average_rating": 8.8
+    },
+    {
+        "title": "Star Wars: Episode V - The Empire Strikes Back",
+        "genres": ["Action", "Adventure", "Fantasy"],
+        "year": 1980,
+        "director": "Irvin Kershner",
+        "actors": ["Mark Hamill", "Harrison Ford", "Carrie Fisher"],
+        "average_rating": 8.7
+    },
+    {
+        "title": "The Lord of the Rings: The Two Towers",
+        "genres": ["Adventure", "Drama", "Fantasy"],
+        "year": 2002,
+        "director": "Peter Jackson",
+        "actors": ["Elijah Wood", "Ian McKellen", "Viggo Mortensen"],
+        "average_rating": 8.7
+    },
+    {
+        "title": "The Matrix",
+        "genres": ["Action", "Sci-Fi"],
+        "year": 1999,
+        "director": "Lana Wachowski, Lilly Wachowski",
+        "actors": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
+        "average_rating": 8.7
+    },
+    {
+        "title": "Goodfellas",
+        "genres": ["Biography", "Crime", "Drama"],
+        "year": 1990,
+        "director": "Martin Scorsese",
+        "actors": ["Robert De Niro", "Ray Liotta", "Joe Pesci"],
+        "average_rating": 8.7
+    },
+    {
+        "title": "One Flew Over the Cuckoo's Nest",
+        "genres": ["Drama"],
+        "year": 1975,
+        "director": "Milos Forman",
+        "actors": ["Jack Nicholson", "Louise Fletcher", "Michael Berryman"],
+        "average_rating": 8.7
+    },
+    {
+        "title": "Seven Samurai",
+        "genres": ["Adventure", "Drama"],
+        "year": 1954,
+        "director": "Akira Kurosawa",
+        "actors": ["Toshirô Mifune", "Takashi Shimura", "Keiko Tsushima"],
+        "average_rating": 8.6
+    },
+    {
+        "title": "Se7en",
+        "genres": ["Crime", "Drama", "Mystery"],
+        "year": 1995,
+        "director": "David Fincher",
+        "actors": ["Morgan Freeman", "Brad Pitt", "Kevin Spacey"],
+        "average_rating": 8.6
+    },
+    {
+        "title": "City of God",
+        "genres": ["Crime", "Drama"],
+        "year": 2002,
+        "director": "Fernando Meirelles, Kátia Lund",
+        "actors": ["Alexandre Rodrigues", "Leandro Firmino", "Matheus Nachtergaele"],
+        "average_rating": 8.6
+    },
+    {
+        "title": "The Silence of the Lambs",
+        "genres": ["Crime", "Drama", "Thriller"],
+        "year": 1991,
+        "director": "Jonathan Demme",
+        "actors": ["Jodie Foster", "Anthony Hopkins", "Lawrence A. Bonney"],
+        "average_rating": 8.6
+    },
+    {
+        "title": "It's a Wonderful Life",
+        "genres": ["Drama", "Family", "Fantasy"],
+        "year": 1946,
+        "director": "Frank Capra",
+        "actors": ["James Stewart", "Donna Reed", "Lionel Barrymore"],
+        "average_rating": 8.6
+    },
+    {
+        "title": "Life Is Beautiful",
+        "genres": ["Comedy", "Drama", "Romance"],
+        "year": 1997,
+        "director": "Roberto Benigni",
+        "actors": ["Roberto Benigni", "Nicoletta Braschi", "Giorgio Cantarini"],
+        "average_rating": 8.6
+    },
+    {
+        "title": "The Usual Suspects",
+        "genres": ["Crime", "Mystery", "Thriller"],
+        "year": 1995,
+        "director": "Bryan Singer",
+        "actors": ["Kevin Spacey", "Gabriel Byrne", "Chazz Palminteri"],
+        "average_rating": 8.5
+    },
+    {
+        "title": "Léon: The Professional",
+        "genres": ["Action", "Drama", "Thriller"],
+        "year": 1994,
+        "director": "Luc Besson",
+        "actors": ["Jean Reno", "Gary Oldman", "Natalie Portman"],
+        "average_rating": 8.5
+    },
+    {
+        "title": "Saving Private Ryan",
+        "genres": ["Drama", "War"],
+        "year": 1998,
+        "director": "Steven Spielberg",
+        "actors": ["Tom Hanks", "Matt Damon", "Tom Sizemore"],
+        "average_rating": 8.6
+    },
+    {
+        "title": "Spirited Away",
+        "genres": ["Animation", "Adventure", "Family"],
+        "year": 2001,
+        "director": "Hayao Miyazaki",
+        "actors": ["Daveigh Chase", "Suzanne Pleshette", "Miyu Irino"],
+        "average_rating": 8.6
+    },
+    {
+        "title": "The Green Mile",
+        "genres": ["Crime", "Drama", "Fantasy"],
+        "year": 1999,
+        "director": "Frank Darabont",
+        "actors": ["Tom Hanks", "Michael Clarke Duncan", "David Morse"],
+        "average_rating": 8.6
+    },
+    {
+        "title": "Interstellar",
+        "genres": ["Adventure", "Drama", "Sci-Fi"],
+        "year": 2014,
+        "director": "Christopher Nolan",
+        "actors": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"],
+        "average_rating": 8.6
+    },
+    {
+        "title": "Parasite",
+        "genres": ["Comedy", "Drama", "Thriller"],
+        "year": 2019,
+        "director": "Bong Joon Ho",
+        "actors": ["Kang-ho Song", "Sun-kyun Lee", "Yeo-jeong Jo"],
+        "average_rating": 8.6
+    },
+    {
+        "title": "American History X",
+        "genres": ["Drama"],
+        "year": 1998,
+        "director": "Tony Kaye",
+        "actors": ["Edward Norton", "Edward Furlong", "Beverly D'Angelo"],
+        "average_rating": 8.5
+    },
+    {
+        "title": "Psycho",
+        "genres": ["Horror", "Mystery", "Thriller"],
+        "year": 1960,
+        "director": "Alfred Hitchcock",
+        "actors": ["Anthony Perkins", "Janet Leigh", "Vera Miles"],
+        "average_rating": 8.5
+    },
+    {
+        "title": "The Pianist",
+        "genres": ["Biography", "Drama", "Music"],
+        "year": 2002,
+        "director": "Roman Polanski",
+        "actors": ["Adrien Brody", "Thomas Kretschmann", "Frank Finlay"],
+        "average_rating": 8.5
+    },
+    {
+        "title": "The Departed",
+        "genres": ["Crime", "Drama", "Thriller"],
+        "year": 2006,
+        "director": "Martin Scorsese",
+        "actors": ["Leonardo DiCaprio", "Matt Damon", "Jack Nicholson"],
+        "average_rating": 8.5
+    },
+    {
+        "title": "Gladiator",
+        "genres": ["Action", "Adventure", "Drama"],
+        "year": 2000,
+        "director": "Ridley Scott",
+        "actors": ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen"],
+        "average_rating": 8.5
+    },
+    {
+        "title": "Back to the Future",
+        "genres": ["Adventure", "Comedy", "Sci-Fi"],
+        "year": 1985,
+        "director": "Robert Zemeckis",
+        "actors": ["Michael J. Fox", "Christopher Lloyd", "Lea Thompson"],
+        "average_rating": 8.5
+    },
+    {
+        "title": "Whiplash",
+        "genres": ["Drama", "Music"],
+        "year": 2014,
+        "director": "Damien Chazelle",
+        "actors": ["Miles Teller", "J.K. Simmons", "Melissa Benoist"],
+        "average_rating": 8.5
+    },
+    {
+        "title": "Casablanca",
+        "genres": ["Drama", "Romance", "War"],
+        "year": 1942,
+        "director": "Michael Curtiz",
+        "actors": ["Humphrey Bogart", "Ingrid Bergman", "Paul Henreid"],
+        "average_rating": 8.5
+    },
+    {
+        "title": "City Lights",
+        "genres": ["Comedy", "Drama", "Romance"],
+        "year": 1931,
+        "director": "Charlie Chaplin",
+        "actors": ["Charlie Chaplin", "Virginia Cherrill", "Florence Lee"],
+        "average_rating": 8.5
+    },
+    {
+        "title": "The Prestige",
+        "genres": ["Drama", "Mystery", "Sci-Fi"],
+        "year": 2006,
+        "director": "Christopher Nolan",
+        "actors": ["Christian Bale", "Hugh Jackman", "Scarlett Johansson"],
+        "average_rating": 8.5
+    },
+    {
+        "title": "Aliens",
+        "genres": ["Action", "Adventure", "Sci-Fi"],
+        "year": 1986,
+        "director": "James Cameron",
+        "actors": ["Sigourney Weaver", "Michael Biehn", "Carrie Henn"],
+        "average_rating": 8.4
+    },
+    {
+        "title": "Once Upon a Time in the West",
+        "genres": ["Western"],
+        "year": 1968,
+        "director": "Sergio Leone",
+        "actors": ["Henry Fonda", "Charles Bronson", "Claudia Cardinale"],
+        "average_rating": 8.5
+    },
+    {
+        "title": "Whiplash",
+        "genres": ["Drama", "Music"],
+        "year": 2014,
+        "director": "Damien Chazelle",
+        "actors": ["Miles Teller", "J.K. Simmons", "Melissa Benoist"],
+        "average_rating": 8.5
+        },
+        {
+        "title": "Gladiator",
+        "genres": ["Action", "Adventure", "Drama"],
+        "year": 2000,
+        "director": "Ridley Scott",
+        "actors": ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen"],
+        "average_rating": 8.5
+        },
+        {
+        "title": "Back to the Future",
+        "genres": ["Adventure", "Comedy", "Sci-Fi"],
+        "year": 1985,
+        "director": "Robert Zemeckis",
+        "actors": ["Michael J. Fox", "Christopher Lloyd", "Lea Thompson"],
+        "average_rating": 8.5
+        },
+        {
+        "title": "The Lion King",
+        "genres": ["Animation", "Adventure", "Drama"],
+        "year": 1994,
+        "director": "Roger Allers, Rob Minkoff",
+        "actors": ["Matthew Broderick", "Jeremy Irons", "James Earl Jones"],
+        "average_rating": 8.5
+        },
+        {
+        "title": "Casablanca",
+        "genres": ["Drama", "Romance", "War"],
+        "year": 1942,
+        "director": "Michael Curtiz",
+        "actors": ["Humphrey Bogart", "Ingrid Bergman", "Paul Henreid"],
+        "average_rating": 8.5
+        },
+        {
+        "title": "Apocalypse Now",
+        "genres": ["Drama", "Mystery", "War"],
+        "year": 1979,
+        "director": "Francis Ford Coppola",
+        "actors": ["Martin Sheen", "Marlon Brando", "Robert Duvall"],
+        "average_rating": 8.4
+        },
+        {
+        "title": "The Shining",
+        "genres": ["Drama", "Horror"],
+        "year": 1980,
+        "director": "Stanley Kubrick",
+        "actors": ["Jack Nicholson", "Shelley Duvall", "Danny Lloyd"],
+        "average_rating": 8.4
+        },
+        {
+        "title": "Alien",
+        "genres": ["Horror", "Sci-Fi"],
+        "year": 1979,
+        "director": "Ridley Scott",
+        "actors": ["Sigourney Weaver", "Tom Skerritt", "John Hurt"],
+        "average_rating": 8.4
+        },
+        {
+        "title": "A Clockwork Orange",
+        "genres": ["Crime", "Drama", "Sci-Fi"],
+        "year": 1971,
+        "director": "Stanley Kubrick",
+        "actors": ["Malcolm McDowell", "Patrick Magee", "Michael Bates"],
+        "average_rating": 8.3
+        }
+]
