@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Recommendation</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <form method="POST">
+        <label for="has_preferred_movie">Do you have a preferred movie?</label>
+        <select id="has_preferred_movie" name="has_preferred_movie">
+            <option value="">Select an option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <label for="movie" id="movie_label" style="display: none">Preferred Movie:</label>
+        <input type="text" id="movie" name="movie" style="display: none">
+        <label for="genre">Preferred Genre:</label>
+        <input type="text" id="genre" name="genre">
+        <label for="director">Preferred Director:</label>
+        <input type="text" id="director" name="director">
+        <label for="actor">Preferred Actor:</label>
+        <input type="text" id="actor" name="actor">
+        <label for="year">Preferred Year:</label>
+        <input type="text" id="year" name="year">
+        <input type="submit" value="Get Recommendations">
+    </form>
+    <script>
+        document.getElementById('has_preferred_movie').addEventListener('change', function() {
+            if (this.value === 'Yes') {
+                document.getElementById('movie').style.display = 'block';
+                document.getElementById('movie_label').style.display = 'block';
+            } else {
+                document.getElementById('movie').style.display = 'none';
+                document.getElementById('movie_label').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
+
