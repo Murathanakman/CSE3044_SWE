@@ -6,21 +6,21 @@
 </head>
 <body>
     <form method="POST">
-        <label for="has_preferred_movie">Do you have a preferred movie?</label>
+        <label for="has_preferred_movie">Do you have a movie in mind that you're fond of?</label>
         <select id="has_preferred_movie" name="has_preferred_movie">
-            <option value="">Select an option</option>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
+            <option value="">Choose an option...</option>
+            <option value="Yes">Yes, I do!</option>
+            <option value="No">Not really</option>
         </select>
-        <label for="movie" id="movie_label" style="display: none">Preferred Movie:</label>
+        <label for="movie" id="movie_label" style="display: none">Great! What's that movie you're thinking of?</label>
         <input type="text" id="movie" name="movie" style="display: none">
-        <label for="genre">Preferred Genre:</label>
+        <label for="genre">What kind of movie genres are you in the mood for today?</label>
         <input type="text" id="genre" name="genre">
-        <label for="director">Preferred Director:</label>
+        <label for="director">Any directors whose style you're currently into?</label>
         <input type="text" id="director" name="director">
-        <label for="actor">Preferred Actor:</label>
+        <label for="actor">Is there an actor you'd love to see on screen right now?</label>
         <input type="text" id="actor" name="actor">
-        <label for="year">Preferred Year:</label>
+        <label for="year">Do you have a preference for older movies or newer ones? Let us know a year.</label>
         <input type="text" id="year" name="year">
         <input type="submit" value="Get Recommendations">
     </form>
@@ -37,4 +37,5 @@
     </script>
 </body>
 </html>
+
 
