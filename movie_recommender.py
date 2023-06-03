@@ -20,6 +20,14 @@ class MovieRecommender:
     def recommend_movies(self):
         self.df.reset_index(inplace=True, drop=True)
 
+        # check if user has preferred movie but didn't specify which one
+        if self.preferences['has_preferred_movie'] and not self.preferences['movie']:
+            return ["Since you answered 'Yes I do!' to the question 'Do you have a favorite movie in mind?', you should specify your favorite movie or select 'Not really' for the question."]
+
+        # check if any preference has been set
+        if not any([self.preferences['has_preferred_movie'], self.preferences['genre'], self.preferences['actor'], self.preferences['year']]):
+            return ["You haven't made any selections. Please answer at least one question."]
+
         if self.preferences['has_preferred_movie']:
             if self.preferences['movie'] not in self.df['title'].values:
                 return []
@@ -61,5 +69,8 @@ class MovieRecommender:
 
             if filtered_df.empty:
                 return []
+            
+            # Sort by vote_count and vote_average
+            filtered_df = filtered_df.sort_values(by=['vote_count', 'vote_average'], ascending=False)
             
             return filtered_df['title'].tolist()[:5]
