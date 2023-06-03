@@ -47,6 +47,19 @@ class MovieRecommender:
                     return []
                 
                 return filtered_df['title'].tolist()[:5]
-
         else:
-            return self.df['title'].tolist()[:5]
+            filtered_df = self.df.copy()
+
+            if self.preferences['year']:
+                year = int(self.preferences['year'])
+                filtered_df = filtered_df[filtered_df['year'] > year]
+
+            filtered_df = filtered_df[
+                (filtered_df['genres'].apply(lambda x: self.preferences['genre'] in x if self.preferences['genre'] else True)) & 
+                (filtered_df['cast'].apply(lambda x: self.preferences['actor'] in x if self.preferences['actor'] else True))
+            ]
+
+            if filtered_df.empty:
+                return []
+            
+            return filtered_df['title'].tolist()[:5]
