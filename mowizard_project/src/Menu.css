@@ -1,0 +1,27 @@
+.app {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background: #8E0E00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .form{
+  /* From https://css.glass */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.50);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  }
+  
+  .app h1 {
+    color: white;
+  }
