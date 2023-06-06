@@ -8,6 +8,7 @@ import FormLabel from "@mui/material/FormLabel";
 import Button from "@mui/material/Button";
 import Select from "react-select";
 import moviesData from "../src/movies.json";
+import castData from "../src/cast.json";
 
 function Menu() {
   const [formNumber, setFormNumber] = useState(0);
@@ -63,49 +64,10 @@ function Menu() {
     { value: "War", label: "War" },
     { value: "Western", label: "Western" },
   ];
-  const castList = [
-    { value: "Action", label: "Action" },
-    { value: "Adventure", label: "Adventure" },
-    { value: "Animated", label: "Animated" },
-    { value: "Biography", label: "Biography" },
-    { value: "Comedy", label: "Comedy" },
-    { value: "Crime", label: "Crime" },
-    { value: "Dance", label: "Dance" },
-    { value: "Disaster", label: "Disaster" },
-    { value: "Documentary", label: "Documentary" },
-    { value: "Drama", label: "Drama" },
-    { value: "Erotic", label: "Erotic" },
-    { value: "Family", label: "Family" },
-    { value: "Fantasy", label: "Fantasy" },
-    { value: "Found Footage", label: "Found Footage" },
-    { value: "Historical", label: "Historical" },
-    { value: "Horror", label: "Horror" },
-    { value: "Independent", label: "Independent" },
-    { value: "Legal", label: "Legal" },
-    { value: "Live Action", label: "Live Action" },
-    { value: "Martial Arts", label: "Martial Arts" },
-    { value: "Musical", label: "Musical" },
-    { value: "Mystery", label: "Mystery" },
-    { value: "Noir", label: "Noir" },
-    { value: "Performance", label: "Performance" },
-    { value: "Political", label: "Political" },
-    { value: "Romance", label: "Romance" },
-    { value: "Satire", label: "Satire" },
-    { value: "Science Fiction", label: "Science Fiction" },
-    { value: "Short", label: "Short" },
-    { value: "Silent", label: "Silent" },
-    { value: "Slasher", label: "Slasher" },
-    { value: "Sport", label: "Sport" },
-    { value: "Sports", label: "Sports" },
-    { value: "Spy", label: "Spy" },
-    { value: "Superhero", label: "Superhero" },
-    { value: "Supernatural", label: "Supernatural" },
-    { value: "Suspense", label: "Suspense" },
-    { value: "Teen", label: "Teen" },
-    { value: "Thriller", label: "Thriller" },
-    { value: "War", label: "War" },
-    { value: "Western", label: "Western" },
-  ];
+
+  const castList = castData.map((actor) => {
+    return { value: actor.Cast, label: actor.Cast };
+  });
 
   // Function triggered on selection
   function handleSelect(data) {
@@ -136,10 +98,12 @@ function Menu() {
         </h1>
         {formNumber === 0 && (
           <div>
-            <p>Sizi tanımamız için kısa bir anketi cevaplamanız gerekiyor.</p>
+            <p className="form">
+              Sizi tanımamız için kısa bir anketi cevaplamanız gerekiyor.
+            </p>
             <Button
               style={{ marginTop: 10 }}
-              variant="outlined"
+              variant="contained"
               onClick={handleNextClick}
             >
               Ankete Başla
@@ -245,11 +209,11 @@ function Menu() {
         )}
         {formNumber === 4 && (
           <div style={{ marginTop: "40%" }} className="form">
-            <h2>Hangi tarz oyuncuları izlemek istersiniz?</h2>
+            <h2>Favori oyuncularınızı seçiniz.</h2>
             <div style={{ width: 470 }}>
               <Select
                 options={castList}
-                placeholder="Film türleri"
+                placeholder="Oyuncular"
                 value={selectedOptionsCast}
                 onChange={handleSelectCast}
                 isSearchable={true}
