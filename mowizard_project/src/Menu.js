@@ -92,10 +92,23 @@ function Menu() {
   return (
     <div className="app">
       <div>
-        <h1 style={{ marginTop: "20%", fontSize: "50px", textAlign: "center" }}>
-          {" "}
-          Mowizard
+        <h1
+          style={{
+            marginTop: "20%",
+            fontSize: "50px",
+            textAlign: "center",
+            fontFamily: "monospace",
+          }}
+        >
+          <span
+            style={{
+              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.6)",
+            }}
+          >
+            Mowizard
+          </span>
         </h1>
+
         {formNumber === 0 && (
           <div>
             <p className="form">
