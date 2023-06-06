@@ -93,7 +93,6 @@ function Menu() {
     <div className="app">
       <div>
         <h1
-          className="form"
           style={{
             marginTop: "20%",
             fontSize: "50px",
