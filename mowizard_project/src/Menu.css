@@ -3,13 +3,12 @@
     display: flex;
     justify-content: center;
     align-items: start;
-    background: #8E0E00;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
   body {
+    background: url("https://media.giphy.com/media/YnexM9LwlwGu4Z1QnS/giphy.gif");
+    background-size: cover;
     margin: 0;
-    padding: 0;
+    padding: 0;
   }
   
   .form{
