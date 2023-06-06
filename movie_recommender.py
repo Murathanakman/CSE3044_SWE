@@ -2,6 +2,7 @@
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+from fuzzywuzzy import fuzz
 
 class MovieRecommender:
     # Initializing the class with the movie data loaded from a JSON file.
@@ -15,15 +16,59 @@ class MovieRecommender:
         # Initializing an empty dictionary to store user preferences.
         self.preferences = {}
 
+    # This function finds the closest string to the user's input in the 'title' column. This is used because there is only one title for each movie.
+    def find_closest_string_movie(self, user_input):
+        closest_string = None
+        similarity_score = 0
+        for string in self.df['title']:
+            current_score = fuzz.token_set_ratio(user_input, string.lower())
+            if current_score > similarity_score:
+                closest_string = string
+                similarity_score = current_score
+        return closest_string
+
+    # This function finds the closest string to the user's input in the 'genres' and 'cast' columns. String lists are used because there are multiple genres and actors for each movie.
+    def find_closest_string_genre_actor(self, user_input, column_name):
+        closest_string = None
+        similarity_score = 0
+        for string_list in self.df[column_name]:
+            for string in string_list:
+                current_score = fuzz.token_set_ratio(user_input, string.lower())
+                if current_score > similarity_score:
+                    closest_string = string
+                    similarity_score = current_score
+        return closest_string
+
+
     # This function collects the user's preferences from a given form.
     def get_preferences(self, form):
         # Checking if the user has a preferred movie and storing it.
         self.preferences['has_preferred_movie'] = form['has_preferred_movie'] == 'Yes'
         # Storing the user's preferred movie, genre, actor, and year.
-        self.preferences['movie'] = form['movie'] if self.preferences['has_preferred_movie'] else None
-        self.preferences['genre'] = form['genre']
-        self.preferences['actor'] = form['actor']
+        closest_movie = self.find_closest_string_movie(form['movie']) if self.preferences['has_preferred_movie'] else None
+        closest_genre = self.find_closest_string_genre_actor(form['genre'], 'genres')
+        closest_actor = self.find_closest_string_genre_actor(form['actor'], 'cast')
+
+        self.preferences['movie'] = closest_movie
+        self.preferences['genre'] = closest_genre
+        self.preferences['actor'] = closest_actor
         self.preferences['year'] = form['year']
+
+        if closest_movie is not None and form['movie'] == closest_movie:
+            print("Girilen film adı bulundu: ", closest_movie)
+        if closest_movie is not None and form['movie'] != closest_movie:
+            print("Girilen film adı bulunamadı. En yakın eşleşme: ", closest_movie)
+
+        if form['genre'] == closest_genre:
+            print("Girilen tür bulundu: ", closest_genre)
+        if form['genre'] != closest_genre:
+            print("Girilen tür bulunamadı. En yakın eşleşme: ", closest_genre)
+
+        if form['actor'] == closest_actor:
+            print("Girilen aktör bulundu: ", closest_actor)
+        if form['actor'] != closest_actor:
+            print("Girilen aktör bulunamadı. En yakın eşleşme: ", closest_actor)
+
 
     # This function uses the user's preferences to recommend movies.
     def recommend_movies(self):
