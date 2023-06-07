@@ -120,7 +120,7 @@ class MovieRecommender:
                     return []
                 
                 # Return the top 5 movies.
-                return filtered_df['title'].tolist()[:5]
+                return [{'title': movie, 'thumbnail': self.df[self.df['title'] == movie]['thumbnail'].values[0]} for movie in filtered_df['title'].tolist()[:5]]
         else:
             # If the user didn't specify a preferred movie, filter the movies based on the other preferences.
             filtered_df = self.df.copy()
@@ -142,4 +142,4 @@ class MovieRecommender:
             filtered_df = filtered_df.sort_values(by=['vote_count', 'vote_average'], ascending=False)
             
             # Return the top 5 movies.
-            return filtered_df['title'].tolist()[:5]
+            return [{'title': movie, 'thumbnail': self.df[self.df['title'] == movie]['thumbnail'].values[0]} for movie in filtered_df['title'].tolist()[:5]]
